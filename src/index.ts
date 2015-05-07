@@ -5,6 +5,7 @@ require('./index.css');
 
 import React = require('react/addons');
 import Button = require('./Button');
+import Table = require('./Table');
 /**
  * If we don't use AsyncComponent at the value level, tsc won't emit require
  * statement and so we won't have it bundled. Though type info is acquired and
@@ -17,6 +18,7 @@ var App = React.createClass({
   render() {
     return React.DOM.div({},
       React.createElement(Button, {}),
+      React.createElement(Table, {}),
       this.state.async ? React.createElement(this.state.async, {}) : null
     );
   },

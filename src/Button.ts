@@ -9,7 +9,7 @@ var Button = React.createClass({
   },
 
   componentDidMount() {
-    console.log('buttonDidMount');
+    console.log('button class DidMount');
   },
 
   onClick(e) {
